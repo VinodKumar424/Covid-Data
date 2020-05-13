@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=on">
+        <title>
+        
+            covid19 Gujarat 
+        </title>
+        <script  src="jquery-3.5.0.min.js"></script>
+        <script  src="index.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      
+        <style>
+          .container{
+            background-image: url(covid.jpg);  
+          }
+        </style>
+    </head>
+<div class="jumbotron jumbotron-fluid bg-primary">
+        <div class="container">
+          
+          <h1 style="color:darkgreen; text-align: center;">stay home stay safe</h1>
+          <!-- <img src="covid.jpg" alt="" class="" width="100%"> -->
+          <p class="lead" style="color: deeppink;"><b>Vinod Kumar Mallelli</b></p>
+        </div>
+      </div>
+
+
+            <table class="table table-dark">
+                <thead class="thead">
+                  <tr>
+                    <th scope="col">District</th>
+                    <th scope="col">Active</th>
+                    <th scope="col">Confirmed</th>
+                    <th scope="col">Death</th>
+                    <th scope="col">Recovered</th>
+                    <th scope="col">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>West Godavari</th>
+                    <td id="wga"></td>
+                    <td id="wgc"></td>
+                    <td id="wgd"></td>
+                    <td id="wgr"></td>
+                    <td id="wgda"></td>
+                  </tr>
+                  <tr>
+                    <th>Srikakulam</th>
+                    <td id="sa"></td>
+                    <td id="sc"></td>
+                    <td id="sd"></td>
+                    <td id="sr"></td>
+                    <td id="sda"></td>
+                  </tr>
+                  <tr>
+                  <th>Visakhapatnam</th>
+                  <td id="vpa"></td>
+                  <td id="vpc"></td>
+                  <td id="vpd"></td>
+                  <td id="vpr"></td>
+                  <td id="vpda"></td>
+                </tr>
+                <tr>
+                <th>Vizianagaram</th>
+                  <td id="vza"></td>
+                  <td id="vzc"></td>
+                  <td id="vzd"></td>
+                  <td id="vzr"></td>
+                  <td id="vzda"></td>
+                </tr>
+                <tr>
+                <th>East Godavari</th>
+                  <td id="ega"></td>
+                  <td id="egc"></td>
+                  <td id="egd"></td>
+                  <td id="egr"></td>
+                  <td id="egda"></td>
+                </tr>
+                <tr>
+                <th>Krishna</th>
+                  <td id="ka"></td>
+                  <td id="kc"></td>
+                  <td id="kd"></td>
+                  <td id="kr"></td>
+                  <td id="kda"></td>
+                </tr>
+                <tr>
+                <th>Guntur</th>
+                <td id="ga"></td>
+                <td id="gc"></td>
+                <td id="gd"></td>
+                <td id="gr"></td>
+                <td id="gda"></td>
+              </tr>
+              <tr>
+                <th>Prakasam</th>
+                <td id="pa"></td>
+                <td id="pc"></td>
+                <td id="pd"></td>
+                <td id="pr"></td>
+                <td id="pda"></td>
+              </tr>
+              <tr>
+                <th>S.P.S. Nellore</th>
+                <td id="na"></td>
+                <td id="nc"></td>
+                <td id="nd"></td>
+                <td id="nr"></td>
+                <td id="nda"></td>
+              </tr>
+              <tr>
+                <th>Chittoor</th>
+                <td id="cha"></td>
+                <td id="chc"></td>
+                <td id="chd"></td>
+                <td id="chr"></td>
+                <td id="chda"></td>
+              </tr>
+              <tr>
+                <th>Y.S.R Kadapa</th>
+                <td id="kaa"></td>
+                <td id="kac"></td>
+                <td id="kad"></td>
+                <td id="kar"></td>
+                <td id="kada"></td>
+              </tr>
+              <tr>
+                <th>Anantapur</th>
+                <td id="aa"></td>
+                <td id="ac"></td>
+                <td id="ad"></td>
+                <td id="ar"></td>
+                <td id="ada"></td>
+              </tr>
+
+              <tr>
+                <th>Kurnool</th>
+                <td id="kua"></td>
+                <td id="kuc"></td>
+                <td id="kud"></td>
+                <td id="kur"></td>
+                <td id="kuda"></td>
+              </tr>
+
+              <!-- Teangana State Covid Details -->
+              <tr>
+                <th>Adilabad</th>
+                <td id="adaa"></td>
+                <td id="adc"></td>
+                <td id="add"></td>
+                <td id="adr"></td>
+                <td id="adda"></td>
+              </tr>
+              <tr>
+                <th>Nizamabad</th>
+                <td id="nza"></td>
+                <td id="nzc"></td>
+                <td id="nzd"></td>
+                <td id="nzr"></td>
+                <td id="nzda"></td>
+              </tr>
+              <tr>
+                <th>Karimnagar</th>
+                <td id="kra"></td>
+                <td id="krc"></td>
+                <td id="krd"></td>
+                <td id="krr"></td>
+                <td id="krda"></td>
+              </tr>
+              <tr>
+                <th>Medak</th>
+                <td id="ma"></td>
+                <td id="mc"></td>
+                <td id="md"></td>
+                <td id="mr"></td>
+                <td id="mda"></td>
+              </tr>
+              <tr>
+                <th>Warangal Urban</th>
+                <td id="wua"></td>
+                <td id="wuc"></td>
+                <td id="wud"></td>
+                <td id="wur"></td>
+                <td id="wuda"></td>
+              </tr>
+              <tr>
+                <th>Warangal Rural</th>
+                <td id="wra"></td>
+                <td id="wrc"></td>
+                <td id="wrd"></td>
+                <td id="wrr"></td>
+                <td id="wrda"></td>
+              </tr>
+              <tr>
+                <th>Ranga Reddy</th>
+                <td id="rra"></td>
+                <td id="rrc"></td>
+                <td id="rrd"></td>
+                <td id="rrr"></td>
+                <td id="rrda"></td>
+              </tr>
+              <tr>
+                <th>Hyderabad</th>
+                <td id="hya"></td>
+                <td id="hyc"></td>
+                <td id="hyd"></td>
+                <td id="hyr"></td>
+                <td id="hyda"></td>
+              </tr>
+              <tr>
+                <th>Khammam</th>
+                <td id="kma"></td>
+                <td id="kmc"></td>
+                <td id="kmd"></td>
+                <td id="kmr"></td>
+                <td id="kmda"></td>
+              </tr>
+              <tr>
+                <th>Nalgonda</th>
+                <td id="nla"></td>
+                <td id="nlc"></td>
+                <td id="nld"></td>
+                <td id="nlr"></td>
+                <td id="nlda"></td>
+              </tr>
+              <tr>
+                <th>Mahabubnagar</th>
+                <td id="mba"></td>
+                <td id="mbc"></td>
+                <td id="mbd"></td>
+                <td id="mbr"></td>
+                <td id="mbda"></td>
+              </tr>
+
+                </tbody>
+              </table>
+              
+              <footer class="site-footer">
+                <div class="container1">
+                  <div class="row" align="center">
+
+                    <div class="col-md-3">
+                      <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                      <ul class="footer-links">
+                        <li><a href="tel:9493852732">Phone : (+91) 9493852732</a></li>
+                        <li><a href="tel:7799812606">Phone : (+91) 7799812606</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-md-4">
+                      <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                      <ul class="footer-links">
+                        <li><a href="mallellivinodkumar@gmail.com" target="_blank">mallellivinodkumar@gmail.com</a></li>
+                        <li><a href="vinodkumarmallelli@gmail.com" target="_blank">vinodkumarmallelli@gmail.com</a></li>
+                      </ul>
+                    </div>
+              
+
+                  </div>
+                  <hr>
+                </div>
+
+              </footer>
+<style>
+
+        .site-footer {
+        background-color: #26272b;
+        padding: 45px 0 20px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #fff;
+        margin-top: 1em;
+        }
+
+        .site-footer hr {
+        border-top-color: #bbb;
+        opacity: 0.5
+        }
+
+        .site-footer a:hover {
+        color: #3366cc;
+        text-decoration: none;
+        }
+
+        
+
+        .footer-links li {
+        display: block
+        }
+
+        .footer-links a {
+        color: #ffff;
+        }
+
+
+
+        
+
+    </style>
+
+        
+    <body>
+
+    </body>
+</html>
